@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dropdown Menu - Match Image</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #bcbcbc;
+    }
+
+    nav {
+      background-color: #000;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav > ul > li {
+      display: inline-block;
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 14px 18px;
+      color: white;
+      text-decoration: none;
+      background-color: #000;
+      white-space: nowrap;
+    }
+
+    nav ul li a:hover {
+      background-color: #444;
+    }
+
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+
+    nav ul li:hover > ul {
+      display: block;
+    }
+
+    nav ul ul li {
+      position: relative;
+    }
+
+    nav ul ul ul {
+      left: 100%;
+      top: 0;
+    }
+
+    /* Special styling for last nested item */
+    /* nav ul ul ul li:last-child a {
+      background-color: #f2f2f2;
+      color: black;
+    } */
+
+    nav ul ul ul li:last-child a:hover {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">WordPress</a></li>
+      <li>
+        <a href="#">Web Design +</a>
+        <ul>
+          <li><a href="#">Resource</a></li>
+          <li><a href="#">Links</a></li>
+          <li>
+            <a href="#">Tutorials +</a>
+            <ul>
+              <li><a href="#">HTML/CSS</a></li>
+              <li><a href="#">JQuery</a></li>
+              <li>
+                <a href="#">Outher +</a>
+                <ul>
+                  <li><a href="#">Stuff</a></li>
+                  <li><a href="#">Things</a></li>
+                  <li><a href="#">Outher Stuff</a></li> <!-- light bg -->
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Inspiration</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
